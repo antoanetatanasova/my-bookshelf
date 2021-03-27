@@ -1,5 +1,6 @@
 import Books from './components/Books'
 import { useState, useEffect } from 'react';
+import Quiz from './components/Quiz/Quiz';
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Books books={books} />
+      <Quiz />
     </div>
   );
 }
